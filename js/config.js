@@ -10,10 +10,10 @@ window.SITE = {
   // "Write to me" form → Google Sheet.
   // Paste the Apps Script Web App URL here (see README.md, step 3).
   // While this is empty, the form opens the visitor's email app instead.
-  formEndpoint: "",
+  formEndpoint: "https://script.google.com/macros/s/AKfycbxeRyGqHKjkLk7cwlpQwfULs-pTfTBHW2b0Jkpj7b-HUdCUrFEs2k2KYLzymj0yy0Mb/exec",
 
   // Contact details shown on the page. Set phone to "" to hide it.
   email:    "satyanshmishra02@gmail.com",
-  phone:    "+91 79996 12227",
+  phone:    "",
   linkedin: "https://www.linkedin.com/in/satyansh-mishra-362110171"
 };
