@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satyansh Mishra | Mathematics teacher and data scientist</title>
+<meta name="description" content="Satyansh Mishra teaches mathematics to IIT-JEE aspirants in Gwalior and builds the software behind his classroom. M.Tech from MNIT Jaipur, former data scientist at Micron, published computer-vision researcher.">
+<meta property="og:title" content="Satyansh Mishra">
+<meta property="og:description" content="Mathematics teacher, data scientist, and builder of classroom tools.">
+<meta property="og:image" content="https://satyansh.blog/assets/img/portrait.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#080c1b">
+<link rel="icon" href="assets/logo-96.png" type="image/png">
+<link rel="preload" href="assets/fonts/LM-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/LM-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav-name" href="#top"><img src="assets/logo.svg" alt="" width="46" height="46">Satyansh Mishra</a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#work">Work</a>
+    <a href="#research">Research</a>
+    <a href="#classroom">Classroom</a>
+    <a href="#write">Write to me</a>
+    <a class="pill pill-lab" data-link="lab" href="https://scilab.satyansh.blog" target="_blank" rel="noopener">Science lab</a>
+    <a class="pill pill-test" data-link="test" href="https://test.satyansh.blog" target="_blank" rel="noopener">Test papers</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+  <canvas id="board" aria-hidden="true"></canvas>
+  <div class="floaters" id="floaters" aria-hidden="true">
+    <div class="fx a " data-depth="8" style="top:9%;left:2%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1634em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8184em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="minner mtight">⋯</span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.04em;vertical-align:-0.3147em;"></span><span class="mord sqrt"><span class="katex-root"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.4616em;"><span style="top:-2.7463em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size6 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7253em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.6853em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3147em;"><span></span></span></span></span></span></span></span></span></span></div>
+    <div class="fx  " data-depth="16" style="top:12%;left:50%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.908em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">iπ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span></div>
+    <div class="fx c hide-s" data-depth="24" style="top:26%;right:3%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mclose">)</span></span></span></span></span></div>
+    <div class="fx c " data-depth="16" style="top:67%;left:47%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mrel mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+    <div class="fx  hide-s" data-depth="24" style="top:50%;left:50%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2065em;vertical-align:-0.345em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8615em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">s</span><span class="mtight">i</span><span class="mtight">n</span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></div>
+    <div class="fx c hide-s" data-depth="8" style="top:76%;right:1.5%"><span><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathbf" style="margin-right:0.016em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mord mathbf" style="margin-right:0.016em;">v</span></span></span></span></span></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1 class="hero-name">
+        <span class="line"><span>Satyansh</span></span>
+        <span class="line"><span>Mishra</span></span>
+        <svg class="chalk-underline" viewBox="0 0 520 26" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 90 4, 170 22, 260 12 S 430 6, 516 14"/></svg>
+      </h1>
+      <p class="hero-role"><span id="role">Mathematics teacher</span><span class="caret" aria-hidden="true"></span></p>
+      <p class="hero-lede">I teach mathematics to IIT-JEE aspirants in Gwalior, and I write the software that runs behind my classroom. Before this I was a data scientist at Micron and a computer-vision researcher at MNIT Jaipur.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#journey">Read my journey</a>
+        <a class="btn btn-line" href="#portals">Open the lab and tests</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/img/portrait.jpg" alt="Satyansh Mishra in a navy blazer and sunglasses, looking to the side" width="1050" height="1400" fetchpriority="high">
+      <span class="detect" aria-hidden="true"></span>
+      <span class="detect-label" aria-hidden="true">satyansh 0.99</span>
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    </figure>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1634em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8184em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="minner mtight">⋯</span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.04em;vertical-align:-0.3147em;"></span><span class="mord sqrt"><span class="katex-root"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.4616em;"><span style="top:-2.7463em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size6 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7253em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.6853em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3147em;"><span></span></span></span></span></span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mclose">)</span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.908em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">iπ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1138em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.355em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">+</span><span class="mord mtight">1</span><span class="mclose mtight">)</span><span class="mopen mtight">(</span><span class="mord mtight">2</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">+</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">IoU</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mbin mtight">∪</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mord mtight">∣</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mbin mtight">∩</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mord mtight">∣</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.3998em;vertical-align:-0.3558em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.1945em;position:relative;top:-0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.044em;"><span style="top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2579em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3558em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mopen">(</span><span class="mord mathnormal">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2065em;vertical-align:-0.345em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8615em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">s</span><span class="mtight">i</span><span class="mtight">n</span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mrel mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2251em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathbf" style="margin-right:0.016em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mord mathbf" style="margin-right:0.016em;">v</span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1634em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8184em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3173em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="minner mtight">⋯</span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathnormal mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.04em;vertical-align:-0.3147em;"></span><span class="mord sqrt"><span class="katex-root"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.4616em;"><span style="top:-2.7463em;"><span class="pstrut" style="height:2.5em;"></span><span class="katex-sizing reset-size6 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7253em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.6853em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3147em;"><span></span></span></span></span></span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">η</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0278em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0278em;">θ</span><span class="mclose">)</span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.908em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">iπ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.1138em;vertical-align:-0.2997em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8043em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0315em;">k</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2997em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.355em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">+</span><span class="mord mtight">1</span><span class="mclose mtight">)</span><span class="mopen mtight">(</span><span class="mord mtight">2</span><span class="mord mathnormal mtight">n</span><span class="mbin mtight">+</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">IoU</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mbin mtight">∪</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mord mtight">∣</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mbin mtight">∩</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mord mtight">∣</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.3998em;vertical-align:-0.3558em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.1945em;position:relative;top:-0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.044em;"><span style="top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2579em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3558em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mopen">(</span><span class="mord mathnormal">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord katex-accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.6944em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">σ</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.1389em;">W</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">b</span><span class="mclose">)</span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2065em;vertical-align:-0.345em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8615em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mtight">s</span><span class="mtight">i</span><span class="mtight">n</span></span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span><span class="t c"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.0502em;">B</span><span class="mrel mtight">∣</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mathnormal mtight" style="margin-right:0.1389em;">P</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">A</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span class="t a"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.2251em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8141em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="t p"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathbf" style="margin-right:0.016em;">v</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mord mathbf" style="margin-right:0.016em;">v</span></span></span></span></span>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="band" id="about">
+  <svg class="motif motif-circle" viewBox="0 0 300 300" aria-hidden="true"><line class="axis" x1="0" y1="150" x2="300" y2="150"/><line class="axis" x1="150" y1="0" x2="150" y2="300"/><circle class="ring" cx="150" cy="150" r="110"/><line class="rad" x1="150" y1="150" x2="260" y2="150"/><circle class="dot" cx="260" cy="150" r="6"/><path class="wave" d="M0 150 C 25 60, 50 60, 75 150 S 125 240, 150 150 S 200 60, 225 150 S 275 240, 300 150"/></svg>
+  <div class="wrap about">
+    <div class="about-text">
+      <h2><span class="num">1</span>A mathematics teacher with an engineer's habits</h2>
+      <p>I teach calculus, algebra, coordinate geometry and probability to students preparing for JEE Main, JEE Advanced and the Science Olympiads at VigyanPath Classes in Gwalior, where I also coordinate a team of 10 to 15 people.</p>
+      <p>By training I am a computer scientist. I hold an M.Tech from MNIT Jaipur, published research on detecting lung cancer in CT scans with deep learning, and worked as a data scientist at Micron Technology on data from semiconductor fabs.</p>
+      <p>I left industry for the classroom because mathematics was the part of machine learning I loved most. I never stopped building, though. The OMR checker that grades our exams, the paper generator, the online test portal and the virtual science lab are all things I wrote for my students.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Teaching for</dt><dd><span data-count="7">7</span>+ years</dd></div>
+      <div><dt>Students taught</dt><dd><span data-count="7000">7,000</span>+</dd></div>
+      <div><dt>Now</dt><dd>Advanced Mathematics Faculty and Coordinator, VigyanPath Classes</dd></div>
+      <div><dt>Before</dt><dd>Data Scientist II, Micron Technology</dd></div>
+      <div><dt>Studied</dt><dd>M.Tech, MNIT Jaipur<br>B.E., MITS Gwalior</dd></div>
+      <div><dt>Published in</dt><dd>Multimedia Tools and Applications, Springer</dd></div>
+      <div><dt>Off duty</dt><dd>Badminton and cricket</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="band alt" id="journey">
+  <div class="wrap">
+    <h2><span class="num">2</span>The journey so far</h2>
+    <p class="section-intro">Two threads run through it. <span class="key key-teach">Yellow</span> marks the classroom, <span class="key key-build">blue</span> marks engineering and research.</p>
+
+    <ol class="timeline" id="timeline">
+      <li class="stop build">
+        <div class="when">2016<span>to 2020</span></div>
+        <div class="what">
+          <h3>B.E. in Information Technology</h3>
+          <p class="where">Madhav Institute of Technology and Science, Gwalior</p>
+          <p>Four years of engineering in my home city, where programming and mathematics first started to feel like the same subject. Graduated with first division.</p>
+        </div>
+      </li>
+
+      <li class="stop build">
+        <div class="when">2020<span>to 2022</span></div>
+        <div class="what">
+          <h3>M.Tech at MNIT Jaipur</h3>
+          <p class="where">Computer Engineering and Information Security, Department of Computer Science and Engineering</p>
+          <p>My thesis, supervised by Dr. Lavika Goel, asked whether a deep-learning detector could find lung cancer in CT scans more reliably if its weights were tuned by a nature-inspired optimiser. It became my first published paper.</p>
+          <div class="shots shots-1">
+            <button class="shot" data-full="assets/img/full/mnit.jpg" data-cap="Outside the Department of Computer Science and Engineering, MNIT Jaipur."><img loading="lazy" src="assets/img/mnit.jpg" alt="Satyansh outside the Department of Computer Science and Engineering at MNIT Jaipur" width="1350" height="1800"></button>
+          </div>
+        </div>
+      </li>
+
+      <li class="stop teach">
+        <div class="when">2022<span>alongside the M.Tech</span></div>
+        <div class="what">
+          <h3>Teaching online, one PYQ at a time</h3>
+          <p>Teaching ran next to my own studies. This is a live class from February 2022, working through previous-year JEE questions on area under curves.</p>
+          <div class="shots shots-wide">
+            <button class="shot" data-full="assets/img/full/online-class.jpg" data-cap="A live online class on area under curves, February 2022."><img loading="lazy" src="assets/img/online-class.jpg" alt="Screen from an online class: a JEE question, a hand-drawn parabola with a shaded region, and Satyansh teaching" width="2000" height="891"></button>
+          </div>
+        </div>
+      </li>
+
+      <li class="stop build">
+        <div class="when">2022<span>Aug to May 2023</span></div>
+        <div class="what">
+          <h3>Data Scientist II at Micron Technology</h3>
+          <p>I worked with real-time data from fab tools across photolithography, etch, deposition and metrology. I built a system that turns machine data into ready-made analytical presentations, and owned a tool-utilisation project from the BigQuery pipelines and the models to the Angular front end.</p>
+          <div class="shots shots-3">
+            <button class="shot" data-full="assets/img/full/micron-desk.jpg" data-cap="First days at Micron."><img loading="lazy" src="assets/img/micron-desk.jpg" alt="Satyansh at the Micron office holding his name card" width="1500" height="2000"></button>
+            <button class="shot" data-full="assets/img/full/micron-office.jpg" data-cap="At my desk at Micron."><img loading="lazy" src="assets/img/micron-office.jpg" alt="Satyansh leaning on an office partition, holding a bottle" width="1206" height="1800"></button>
+            <button class="shot" data-full="assets/img/full/micron-campus.jpg" data-cap="Ethnic day outside the office."><img loading="lazy" src="assets/img/micron-campus.jpg" alt="Satyansh in a green kurta wearing an office ID, standing outside glass office towers" width="1347" height="1800"></button>
+          </div>
+        </div>
+      </li>
+
+      <li class="stop teach">
+        <div class="when">2023<span>May to today</span></div>
+        <div class="what">
+          <h3>Back to Gwalior, back to the board</h3>
+          <p class="where">Advanced Mathematics Faculty and Coordinator, VigyanPath Classes</p>
+          <p>I came home to teach full time. I write my own question sheets and lecture decks, set and grade the exams, and lead a team of 10 to 15. The engineer in me automated what could be automated, so more of my time goes to students.</p>
+          <p><a class="text-link" href="#classroom">See the classroom and the stage</a></p>
+        </div>
+      </li>
+
+      <li class="stop build">
+        <div class="when">2024<span>in print</span></div>
+        <div class="what">
+          <h3>The thesis becomes a Springer paper</h3>
+          <p>The lung-cancer work appeared in Multimedia Tools and Applications, volume 83.</p>
+          <p><a class="text-link" href="#research">Read about the research</a></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="band" id="work">
+  <svg class="motif motif-net" viewBox="0 0 340 340" aria-hidden="true"><line x1="40" y1="60" x2="170" y2="40"/><line x1="40" y1="60" x2="170" y2="105"/><line x1="40" y1="60" x2="170" y2="170"/><line x1="40" y1="60" x2="170" y2="235"/><line x1="40" y1="60" x2="170" y2="300"/><line x1="40" y1="130" x2="170" y2="40"/><line x1="40" y1="130" x2="170" y2="105"/><line x1="40" y1="130" x2="170" y2="170"/><line x1="40" y1="130" x2="170" y2="235"/><line x1="40" y1="130" x2="170" y2="300"/><line x1="40" y1="200" x2="170" y2="40"/><line x1="40" y1="200" x2="170" y2="105"/><line x1="40" y1="200" x2="170" y2="170"/><line x1="40" y1="200" x2="170" y2="235"/><line x1="40" y1="200" x2="170" y2="300"/><line x1="40" y1="270" x2="170" y2="40"/><line x1="40" y1="270" x2="170" y2="105"/><line x1="40" y1="270" x2="170" y2="170"/><line x1="40" y1="270" x2="170" y2="235"/><line x1="40" y1="270" x2="170" y2="300"/><line x1="170" y1="40" x2="300" y2="110"/><line x1="170" y1="40" x2="300" y2="220"/><line x1="170" y1="105" x2="300" y2="110"/><line x1="170" y1="105" x2="300" y2="220"/><line x1="170" y1="170" x2="300" y2="110"/><line x1="170" y1="170" x2="300" y2="220"/><line x1="170" y1="235" x2="300" y2="110"/><line x1="170" y1="235" x2="300" y2="220"/><line x1="170" y1="300" x2="300" y2="110"/><line x1="170" y1="300" x2="300" y2="220"/><circle cx="40" cy="60" r="9"/><circle cx="40" cy="130" r="9"/><circle cx="40" cy="200" r="9"/><circle cx="40" cy="270" r="9"/><circle cx="170" cy="40" r="9"/><circle cx="170" cy="105" r="9"/><circle cx="170" cy="170" r="9"/><circle cx="170" cy="235" r="9"/><circle cx="170" cy="300" r="9"/><circle cx="300" cy="110" r="9"/><circle cx="300" cy="220" r="9"/></svg>
+  <div class="wrap">
+    <h2><span class="num">3</span>Things I have built</h2>
+    <p class="section-intro">Open any row for the details.</p>
+
+    <div class="projects">
+      <details class="project teach" open>
+        <summary><span class="p-title">OMR grading system</span><span class="p-line">Scanned answer sheets in, audited results out.</span><span class="p-tags">Python, computer vision, LaTeX</span></summary>
+        <ul>
+          <li>Reads scanned PDFs of JEE-style OMR sheets, finds the four corner marks and corrects the perspective of every page.</li>
+          <li>Scores each bubble from how filled it is, and understands a struck-out bubble.</li>
+          <li>Anything it is unsure about goes to a review queue with an image crop, so a person makes the final call.</li>
+          <li>Produces an audit file, an annotated copy of every sheet and typeset result PDFs. Used on real exam batches at the institute.</li>
+        </ul>
+      </details>
+
+      <details class="project teach">
+        <summary><span class="p-title">JEE paper generator</span><span class="p-line">Practice papers assembled and checked by code.</span><span class="p-tags">Python, SymPy, LaTeX</span></summary>
+        <ul>
+          <li>A Python package that loads a question bank, spreads questions across chapters and assembles a paper.</li>
+          <li>Checks every answer with SymPy and mpmath before the paper is released.</li>
+          <li>Exports a styled PDF and a Word file from the same source, from one command.</li>
+        </ul>
+      </details>
+
+      <details class="project teach">
+        <summary><span class="p-title">Mock-test portal</span><span class="p-line">Timed JEE papers students can take from home.</span><span class="p-tags">JavaScript, Google Sheets, GitHub Pages</span></summary>
+        <ul>
+          <li>Students log in with a name and phone number and pick a paper.</li>
+          <li>One attempt per student per paper, with results saved automatically.</li>
+          <li><a class="text-link" data-link="test" href="https://test.satyansh.blog" target="_blank" rel="noopener">Open the test portal</a></li>
+        </ul>
+      </details>
+
+      <details class="project teach">
+        <summary><span class="p-title">Virtual science lab</span><span class="p-line">Interactive experiments for Classes 6 to 8.</span><span class="p-tags">JavaScript, GitHub Pages</span></summary>
+        <ul>
+          <li>A lab students can enter from any phone or laptop, organised by class and chapter.</li>
+          <li><a class="text-link" data-link="lab" href="https://scilab.satyansh.blog" target="_blank" rel="noopener">Open the lab</a></li>
+        </ul>
+      </details>
+
+      <details class="project build">
+        <summary><span class="p-title">Lung cancer detection in CT scans</span><span class="p-line">M.Tech thesis, published by Springer.</span><span class="p-tags">Deep learning, YOLOv3, optimisation</span></summary>
+        <ul>
+          <li>A YOLOv3 detector whose weights are refined by Biogeography-Based Optimization with Extinction and Evolution.</li>
+          <li>Trained on two public CT datasets, LIDC-IDRI and LUNA16.</li>
+          <li>92% accuracy on LUNA16 and 90.01% on LIDC-IDRI, with a small interface that counts nodules and grades malignancy.</li>
+        </ul>
+      </details>
+
+      <details class="project build">
+        <summary><span class="p-title">Automated fab reporting</span><span class="p-line">Machine data turned into ready-made presentations, at Micron.</span><span class="p-tags">Python, machine learning, Angular</span></summary>
+        <ul>
+          <li>Converts data from semiconductor fab tools into analytical slide decks, removing manual report preparation.</li>
+          <li>Uses models I designed myself, with their own mathematics, in place of off-the-shelf ones.</li>
+        </ul>
+      </details>
+
+      <details class="project build">
+        <summary><span class="p-title">Fab tool-utilisation optimisation</span><span class="p-line">An end-to-end project to make tools more reliable, at Micron.</span><span class="p-tags">BigQuery, Python, machine learning, Angular</span></summary>
+        <ul>
+          <li>Owned the whole stack: data pipelines on BigQuery, the models, and the Angular interface engineers used.</li>
+          <li>Made fab tools more reliable and reduced the manual load on the people running them.</li>
+        </ul>
+      </details>
+    </div>
+
+    <p class="skills"><strong>What I work with:</strong> Python, SQL, TensorFlow, scikit-learn, Pandas, NumPy, SymPy, Google BigQuery, Vertex AI, Angular, JavaScript, Git, LaTeX. And underneath all of it: linear algebra, probability, calculus and optimisation.</p>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section class="band alt" id="research">
+  <div class="wrap research">
+    <div>
+      <h2><span class="num">4</span>Published research</h2>
+      <p class="paper-title">A hybrid of modified YOLOv3 with BBO/EE optimizer for lung cancer detection</p>
+      <p class="paper-meta">Lavika Goel and Satyansh Mishra<br>Multimedia Tools and Applications (Springer), 83(17), pages 52219 to 52251, 2024</p>
+      <p>Lung nodules are small, and a missed one matters. We took YOLOv3, a fast object detector, and let a nature-inspired optimiser search for better weights than ordinary training finds on its own. The model then marks suspected nodules on CT slices and separates cancer types from healthy scans.</p>
+      <div class="results">
+        <div><b>92%</b><span>accuracy on LUNA16</span></div>
+        <div><b>90.01%</b><span>accuracy on LIDC-IDRI</span></div>
+      </div>
+      <a class="btn btn-line" href="https://doi.org/10.1007/s11042-023-17454-8" target="_blank" rel="noopener">Read the paper on Springer</a>
+    </div>
+    <figure class="scan" aria-label="Illustration of a CT slice with a detected nodule">
+      <svg viewBox="0 0 360 360" role="img" aria-hidden="true">
+        <circle cx="180" cy="180" r="160" class="scan-body"/>
+        <path class="scan-lung" d="M150 80 C95 85 70 150 72 215 C74 262 100 286 135 280 C160 276 166 250 164 215 C162 170 172 120 150 80Z"/>
+        <path class="scan-lung" d="M210 80 C265 85 290 150 288 215 C286 262 260 286 225 280 C200 276 194 250 196 215 C198 170 188 120 210 80Z"/>
+        <ellipse cx="180" cy="262" rx="20" ry="26" class="scan-spine"/>
+        <circle cx="243" cy="168" r="9" class="scan-nodule"/>
+        <rect x="222" y="147" width="42" height="42" class="scan-box"/>
+        <text x="222" y="139" class="scan-label">nodule 0.92</text>
+        <line x1="20" y1="180" x2="340" y2="180" class="scan-sweep"/>
+      </svg>
+      <figcaption>How the detector reports a finding: a box, a label and a confidence score. Illustration, not patient data.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= CLASSROOM ================= -->
+<section class="band" id="classroom">
+  <div class="wrap">
+    <h2><span class="num">5</span>In the classroom and on stage</h2>
+    <p class="section-intro">The part of the job no dataset ever gave me.</p>
+
+    <div class="gallery">
+      <button class="g g-teach shot" data-full="assets/img/full/teaching.jpg" data-cap="Doubt-solving, one notebook at a time.">
+        <img loading="lazy" src="assets/img/teaching.jpg" alt="Satyansh explaining a problem in a notebook to two students" width="1500" height="2000"><span>Doubt-solving, one notebook at a time.</span>
+      </button>
+      <button class="g g-speech shot" data-full="assets/img/full/speech.jpg" data-cap="Speaking to students at Aabhar, VigyanPath's Teachers' Day event, 2025.">
+        <img loading="lazy" src="assets/img/speech.jpg" alt="Satyansh in a white kurta speaking on stage with a microphone" width="2000" height="1333"><span>Speaking at Aabhar, the Teachers' Day event, 2025.</span>
+      </button>
+      <button class="g g-entry shot" data-full="assets/img/full/entry.jpg" data-cap="A welcome I will not forget, at Aatithya 4.0.">
+        <img loading="lazy" src="assets/img/entry.jpg" alt="Students showering rose petals as Satyansh walks down the aisle of a hall" width="2000" height="1335"><span>A welcome I will not forget.</span>
+      </button>
+      <button class="g g-kv shot" data-full="assets/img/full/with-kumar-vishwas.jpg" data-cap="With Dr. Kumar Vishwas at a VigyanPath event.">
+        <img loading="lazy" src="assets/img/with-kumar-vishwas.jpg" alt="Satyansh in a blue blazer standing with Dr. Kumar Vishwas on stage" width="2000" height="1333"><span>With Dr. Kumar Vishwas at a VigyanPath event.</span>
+      </button>
+      <button class="g g-stage shot" data-full="assets/img/full/stage.jpg" data-cap="The view from the stage: a full auditorium of students and parents.">
+        <img loading="lazy" src="assets/img/stage.jpg" alt="View from behind Satyansh on stage, facing a full auditorium" width="2000" height="1500"><span>The view from the stage.</span>
+      </button>
+    </div>
+
+    <div class="reels" id="reels">
+      <div class="reels-head">
+        <div>
+          <h3>Maths you can watch</h3>
+          <p>Eight short lessons from my reels, two to four minutes each. Half are experiments where equations turn into pictures, half are ideas for JEE.</p>
+        </div>
+        <div class="reel-tools">
+          <div class="reel-filter" role="group" aria-label="Choose which reels to show">
+            <button class="chip on" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" data-filter="desmos" aria-pressed="false">Equations as pictures</button>
+            <button class="chip" data-filter="jee" aria-pressed="false">JEE ideas</button>
+          </div>
+          <div class="reel-nav">
+            <button id="reelPrev" aria-label="Scroll reels back">&#8592;</button>
+            <button id="reelNext" aria-label="Scroll reels forward">&#8594;</button>
+          </div>
+        </div>
+      </div>
+      <div class="reel-row" id="reelRow">
+        <figure class="reel" data-kind="desmos">
+          <button class="reel-play" data-src="assets/video/car-3d.mp4" aria-label="Play: Building a car in 3D, out of equations">
+            <img loading="lazy" src="assets/video/car-3d.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">3:00</span>
+          </button>
+          <figcaption>Building a car in 3D, out of equations</figcaption>
+        </figure>
+        <figure class="reel" data-kind="desmos">
+          <button class="reel-play" data-src="assets/video/water-waves.mp4" aria-label="Play: Water waves from a sine curve">
+            <img loading="lazy" src="assets/video/water-waves.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">2:09</span>
+          </button>
+          <figcaption>Water waves from a sine curve</figcaption>
+        </figure>
+        <figure class="reel" data-kind="desmos">
+          <button class="reel-play" data-src="assets/video/maths-everywhere.mp4" aria-label="Play: Polar curves: maths is everywhere">
+            <img loading="lazy" src="assets/video/maths-everywhere.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">2:57</span>
+          </button>
+          <figcaption>Polar curves: maths is everywhere</figcaption>
+        </figure>
+        <figure class="reel" data-kind="desmos">
+          <button class="reel-play" data-src="assets/video/car-2d.mp4" aria-label="Play: Drawing a moving car in Desmos">
+            <img loading="lazy" src="assets/video/car-2d.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">2:50</span>
+          </button>
+          <figcaption>Drawing a moving car in Desmos</figcaption>
+        </figure>
+        <figure class="reel" data-kind="jee">
+          <button class="reel-play" data-src="assets/video/am-gm.mp4" aria-label="Play: The AM-GM inequality">
+            <img loading="lazy" src="assets/video/am-gm.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">4:13</span>
+          </button>
+          <figcaption>The AM-GM inequality</figcaption>
+        </figure>
+        <figure class="reel" data-kind="jee">
+          <button class="reel-play" data-src="assets/video/complex-numbers.mp4" aria-label="Play: What is ln(−2)?">
+            <img loading="lazy" src="assets/video/complex-numbers.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">1:59</span>
+          </button>
+          <figcaption>What is ln(−2)?</figcaption>
+        </figure>
+        <figure class="reel" data-kind="jee">
+          <button class="reel-play" data-src="assets/video/transformations.mp4" aria-label="Play: Graph transformations, from the basics">
+            <img loading="lazy" src="assets/video/transformations.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">1:47</span>
+          </button>
+          <figcaption>Graph transformations, from the basics</figcaption>
+        </figure>
+        <figure class="reel" data-kind="jee">
+          <button class="reel-play" data-src="assets/video/jee-pyqs.mp4" aria-label="Play: A JEE Main 2026 matrix question, solved">
+            <img loading="lazy" src="assets/video/jee-pyqs.jpg" alt="" width="540" height="960">
+            <span class="play" aria-hidden="true"></span><span class="len">2:25</span>
+          </button>
+          <figcaption>A JEE Main 2026 matrix question, solved</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTALS ================= -->
+<section class="band alt" id="portals">
+  <div class="wrap">
+    <h2><span class="num">6</span>For students: the lab and the tests</h2>
+    <p class="section-intro">Two places I built for learning outside class hours. Both are free to open.</p>
+
+    <div class="portals">
+      <a class="portal portal-lab" data-link="lab" href="https://scilab.satyansh.blog" target="_blank" rel="noopener">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <path class="pl" d="M82 20 h36 M88 20 v38 L52 116 a8 8 0 0 0 7 12 h82 a8 8 0 0 0 7 -12 L112 58 V20"/>
+          <path class="pf" d="M70 92 h60 l16 26 a4 4 0 0 1 -4 6 H58 a4 4 0 0 1 -4 -6z"/>
+          <circle class="pb b1" cx="92" cy="104" r="5"/><circle class="pb b2" cx="110" cy="96" r="3.5"/><circle class="pb b3" cx="102" cy="112" r="2.5"/>
+        </svg>
+        <h3>Virtual science lab</h3>
+        <p>Interactive experiments for Classes 6, 7 and 8, arranged by class and chapter. Try the experiment before, or after, we do it in class.</p>
+        <span class="portal-go">Enter the lab</span>
+        <span class="portal-url" data-url="lab">scilab.satyansh.blog</span>
+      </a>
+
+      <a class="portal portal-test" data-link="test" href="https://test.satyansh.blog" target="_blank" rel="noopener">
+        <svg viewBox="0 0 200 140" aria-hidden="true">
+          <rect class="pl" x="48" y="14" width="104" height="116" rx="6"/>
+          <g class="omr">
+            <circle cx="74" cy="42" r="7"/><circle cx="96" cy="42" r="7" class="on o1"/><circle cx="118" cy="42" r="7"/><circle cx="140" cy="42" r="7"/>
+            <circle cx="74" cy="66" r="7"/><circle cx="96" cy="66" r="7"/><circle cx="118" cy="66" r="7"/><circle cx="140" cy="66" r="7" class="on o2"/>
+            <circle cx="74" cy="90" r="7" class="on o3"/><circle cx="96" cy="90" r="7"/><circle cx="118" cy="90" r="7"/><circle cx="140" cy="90" r="7"/>
+            <circle cx="74" cy="114" r="7"/><circle cx="96" cy="114" r="7"/><circle cx="118" cy="114" r="7" class="on o4"/><circle cx="140" cy="114" r="7"/>
+          </g>
+        </svg>
+        <h3>Satyansh's test papers</h3>
+        <p>Timed JEE mock tests. Log in with your name and phone number, attempt the paper once, and your result is saved when you submit.</p>
+        <span class="portal-go">Take a test</span>
+        <span class="portal-url" data-url="test">test.satyansh.blog</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WRITE ================= -->
+<section class="band" id="write">
+  <svg class="motif motif-plane" viewBox="0 0 520 200" aria-hidden="true"><path class="trail" d="M10 180 C 120 190, 180 60, 300 110 S 420 120, 452 52"/><path class="plane" d="M452 52 L500 20 L474 74 L466 56 Z M466 56 L500 20"/></svg>
+  <div class="wrap write">
+    <div>
+      <h2><span class="num">7</span>Write to me</h2>
+      <p>Student, parent, colleague or someone I have not met yet: tell me what you think, share a memory from class, or just say hello. Every message reaches me directly.</p>
+      <ul class="contact">
+        <li><span>Email</span><a data-contact="email" href="mailto:satyanshmishra02@gmail.com">satyanshmishra02@gmail.com</a></li>
+        <li><span>Phone</span><a data-contact="phone" href="tel:+917999612227">+91 79996 12227</a></li>
+        <li><span>LinkedIn</span><a data-contact="linkedin" href="https://www.linkedin.com/in/satyansh-mishra-362110171" target="_blank" rel="noopener">satyansh-mishra</a></li>
+        <li><span>Based in</span><b>Gwalior, Madhya Pradesh</b></li>
+      </ul>
+    </div>
+
+    <form class="form" id="noteForm" novalidate>
+      <label>Your name
+        <input name="name" type="text" autocomplete="name" required maxlength="80">
+      </label>
+      <label>You are
+        <select name="role">
+          <option>A student</option>
+          <option>A former student</option>
+          <option>A parent</option>
+          <option>A colleague</option>
+          <option>A recruiter or collaborator</option>
+          <option>Someone else</option>
+        </select>
+      </label>
+      <label>Email or phone, if you would like a reply
+        <input name="contact" type="text" autocomplete="email" maxlength="120">
+      </label>
+      <label>Your message
+        <textarea name="message" rows="5" required maxlength="3000"></textarea>
+      </label>
+      <label class="hp" aria-hidden="true">Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+      <button class="btn btn-solid" type="submit" id="noteSend">Send message</button>
+      <p class="form-status" id="noteStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><img src="assets/logo.svg" alt="" width="34" height="34">Satyansh Mishra, Gwalior.</p>
+    <p><a data-link="lab" href="https://scilab.satyansh.blog" target="_blank" rel="noopener">Science lab</a><a data-link="test" href="https://test.satyansh.blog" target="_blank" rel="noopener">Test papers</a><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo">
+  <button class="lb-close" id="lbClose" aria-label="Close photo">Close</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
